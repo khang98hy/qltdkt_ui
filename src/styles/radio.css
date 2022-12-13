@@ -1,0 +1,65 @@
+.row4{
+    display: flex;
+    flex-direction: column;
+}
+.c-radio {
+    display: flex;
+    align-items: center;
+    margin: 0px 30px 0px 1px;
+    cursor: pointer;
+    font-size: 20px;
+    top: 5px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.c-radio input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark2 {
+    height: 24px;
+    width: 24px;
+    background: url(../assets/Icons/ic_radio_inactive.svg);
+}
+
+.blue-background {
+    background-color: #2196F3;
+}
+
+/* On mouse-over, add a grey background color */
+.c-radio:hover input~.checkmark2 {
+    background: url(../assets/Icons/ic_radio_hover.svg);
+    background-position: 0 0;
+}
+
+/* When the checkbox is checked, add a blue background */
+.c-radio input:checked~.checkmark2 {
+    background: url(../assets/Icons/ic_radio_active.svg);
+}
+
+/* Create the checkmark2/indicator (hidden when not checked) */
+.checkmark2:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the checkmark2 when checked */
+.c-radio input:checked~.checkmark2:after {
+    display: block;
+    background: url(../assets/Icons/ic_radio_active.svg);
+}
+
+/* vẽ + cài vtri cho dấu tích */
+.c-radio .checkmark2:after {
+    background: url(../assets/Icons/ic_radio_active.svg);
+
+}

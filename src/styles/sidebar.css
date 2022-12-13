@@ -1,0 +1,95 @@
+.sidebar {
+    z-index: 2;
+    height: calc(100vh - 56px);
+    width: 200px;
+    background-color: var(--background-sidebar);
+    transition: width 0.3s ease;
+    flex-shrink: 0;
+    margin: 0px 0px 0px 0px;
+    box-shadow: #ccccc6 0px 4px 5px 1px;
+}
+
+.sidebar-item {
+    padding: 0 12px;
+    margin-top: 8px;
+    height: 40px;
+    width: 92%;
+    display: flex;
+    align-items: center;
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.sidebar-footer {
+    height: 40px;
+    line-height: 40px;
+    bottom: 18px;
+    position: absolute;
+    padding: 8px 12px;
+    margin: 0px 12px 0px 0px;
+    display: flex;
+    color: white;
+    width: 190px;
+    background: #edf1f5;
+    align-items: center;
+    justify-content: left;
+    border-radius: 8px;
+}
+
+.sidebar-footer:hover {
+    cursor: pointer;
+}
+
+.sidebar-item--active {
+    color: #ff6d00;
+    position: relative;
+    background-color: #FBE9E7;
+    border-radius: 10px;
+}
+
+.sidebar-item:hover {
+    color: #ff6d00;
+    background-color: #EFF7FF;
+    border-radius: 10px;
+}
+
+.sidebar-item>img {
+    margin-right: 8px;
+}
+
+.sidebar-mini {
+    width: 50px;
+}
+.expand-btn{
+    width: 45px;
+}
+.rotage-icon {
+    transform: rotate(180deg);
+    transition-duration: 0.4s;
+}
+
+.tooltip {
+    position: relative;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 80px;
+    background-color: white;
+    color: black;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    border: 1px solid rgba(170, 170, 170, 0.788);
+    /* Xác định vị trí tooltip */
+    position: absolute;
+    z-index: 1;
+    top: 20px;
+    left: 220%;
+    margin-left: -55px;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}

@@ -1,0 +1,74 @@
+:root {
+    --green: #03ae66;
+    --green-hover: #02bf70;
+    --red: #fa3939;
+    --white: #ffffff;
+    --white-hover: #eaecef;
+    --border-color: #cecece;
+    --shadow-color: #d5d5d5;
+    --background-sidebar: --white;
+    --background-color: #eaecef;
+    --focus-grid: #ccebff;
+    --hover-grid-line: #e5f3ff;
+    --link-color: #0097eb;
+    --header-grid-panel: #f5f6fa;
+    --line-grid-panel: #d5d8e6;
+    --label-color: #666666;
+  }
+  
+  @font-face {
+    font-family: GoogleSans;
+    src: url(../assets/Fonts/GoogleSans-Regular.ttf);
+  }
+  
+  @font-face {
+    font-family: OpenSans-Bold;
+    src: url(../assets/Fonts/OpenSans-Bold.ttf);
+  }
+  
+  @font-face {
+    font-family: OpenSans-Italic;
+    src: url(../assets/Fonts/GoogleSans-Italic.ttf);
+  }
+  
+  @font-face {
+    font-family: OpenSans-Medium;
+    src: url(../assets/Fonts/GoogleSans-Medium.ttf);
+  }
+  .shadow {
+    box-shadow: 10px 0px 10px #d5d5d5;
+  }
+  
+  .flex {
+    display: flex;
+  }
+  
+  .title {
+    font-size: 14px;
+    font-style: OpenSans-Semibold;
+  }
+  
+  .sub-title {
+    font-size: 14px;
+  }
+  
+  ::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background-color: transparent;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: #cecece;
+    width: 6px;
+    height: 10px;
+    border-radius: 4px;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: #8f8f8f;
+  }
+  

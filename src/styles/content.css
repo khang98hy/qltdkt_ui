@@ -1,0 +1,261 @@
+.tittle-content {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 35px;
+  margin-bottom: 16px;
+}
+
+.base-input {
+  border: 1px solid #e0e0e0;
+  border-radius: 3.5px;
+  padding: 9px 12px;
+  min-height: 34px;
+  width: 250px;
+  outline: none;
+}
+
+.base-input:hover {
+  border: 1px solid #1A73E8;
+}
+
+.filter-input:focus {
+  outline: none;
+}
+
+.toolbar {
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  align-content: center;
+  margin-bottom: 16px;
+}
+
+.toolbar-left {
+  display: flex;
+}
+
+.toolbar-right {
+  display: flex;
+  justify-content: flex-end;
+  right: 0px;
+  align-items: center;
+  line-height: 36px;
+}
+
+.icon-search {
+  position: absolute;
+  background: url('../assets/Icons/sprites.svg') no-repeat -288px -23px;
+  width: 24px;
+  height: 24px;
+  left: 220px;
+  margin: 5px 5px 5px 0px;
+}
+
+.icon-clear {
+  position: absolute;
+  background: url('../assets/Icons/sprites.svg') no-repeat -240px -24px;
+  width: 24px;
+  height: 24px;
+  left: 200px;
+  margin: 5px 5px 5px 0px;
+}
+
+.icon-search:hover {
+  cursor: pointer;
+}
+
+.filter-btn {
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  width: 100px;
+  height: 36px;
+  border: 1px solid #e0e0e0;
+  color: #000;
+  background: #fff;
+  margin-left: 10px;
+  border-radius: 4px;
+  font-weight: 400;
+}
+
+.filter-btn:hover {
+  cursor: pointer;
+}
+
+.icon-filter {
+  background: url('../assets/Icons/sprites.svg') no-repeat -95px -47px;
+  width: 24px;
+  height: 24px;
+  margin-right: 8px;
+}
+
+.icon-addnew {
+  background: url('../assets/Icons/sprites.svg') no-repeat -191px -96px;
+  width: 24px;
+  height: 24px;
+  margin-right: 8px;
+}
+
+.btn-addnew {
+  display: flex;
+  align-items: center;
+  width: 160px;
+  background-color: #1A73E8;
+  color: white;
+  outline: none;
+  border: none;
+  height: 36px;
+  border-radius: 4px;
+}
+
+.btn-addnew:hover {
+  cursor: pointer;
+}
+
+.selected {
+  line-height: 36px;
+  font-size: 14px;
+}
+
+.clear-selected {
+  margin-left: 20px;
+  color: #1A73E8;
+  font-size: 14px;
+}
+
+.clear-selected:hover {
+  text-decoration: underline 1px #1A73E8;
+  cursor: pointer;
+}
+
+.use {
+  font-size: 14px;
+  height: 36px;
+  width: 85px;
+  margin-left: 20px;
+  color: #1A73E8;
+  background-color: #fff;
+  outline: none;
+  border: 1px solid #1A73E8;
+  border-radius: 4px;
+}
+
+.use:hover {
+  cursor: pointer;
+}
+
+.stop-use {
+  font-size: 14px;
+  height: 36px;
+  width: 130px;
+  margin-left: 10px;
+  margin-right: 10px;
+  background-color: white;
+  outline: none;
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+}
+
+.stop-use:hover {
+  background-color: #F4F5F8;
+  cursor: pointer;
+}
+
+.delete-selected {
+  font-size: 14px;
+  height: 36px;
+  width: 80px;
+  color: red;
+  background-color: #fff;
+  outline: none;
+  border: 1px solid red;
+  border-radius: 4px;
+}
+
+.footer-page {
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  align-items: center;
+  background: #fff;
+  min-height: 40px;
+  border-top: 1px solid #ddd;
+  padding: 0px 16px;
+  box-shadow: #ccccc6 0px 4px 5px 1px;
+}
+
+.size14 {
+  font-size: 14px;
+}
+
+.footer-right {
+  display: flex;
+  align-items: center;
+}
+
+#combobox {
+  margin-left: 12px;
+  margin-right: 16px;
+  height: 35px;
+  outline: none;
+  width: 85px;
+  padding: 0 8px 0 0;
+}
+
+.btn-prev {
+  border: none;
+  margin-left: 20px;
+  background: url('../assets/Icons/sprites.svg') no-repeat -212px 5px;
+  width: 34px;
+  height: 34px;
+}
+
+.btn-next {
+  border: none;
+  margin-right: 20px;
+  background: url('../assets/Icons/sprites.svg') no-repeat -232px 5px;
+  width: 34px;
+  height: 34px;
+}
+
+.box-header {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+  padding: 12px 22px 8px 24px;
+  border-top-right-radius: 4px;
+  border-top-left-radius: 4px;
+}
+
+.box-tittle {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.box-content {
+  width: 100%;
+  padding: 12px 24px 10px;
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid #ddd;
+}
+
+.filter-label {
+  color: #666;
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+.position-level--filter {
+  top: 35px;
+  width: 100%;
+}
+.form-group{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 16px;
+}
+.box-footer{
+  background-color: #fbfbfe;
+}

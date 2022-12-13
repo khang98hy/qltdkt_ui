@@ -1,0 +1,63 @@
+.c-checkbox {
+  display: initial;
+  position: relative;
+  align-items: center;
+  margin: 0px 16px 0px 1px;
+  cursor: pointer;
+  font-size: 20px;
+  top: 5px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  }
+  /* Hide the browser's default checkbox */
+  .c-checkbox input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  /* Create a custom checkbox */
+  .checkmark {
+    position: absolute;
+    top: -4px;
+    left: -3px;
+    height: 24px;
+    width: 24px;
+    background: url(../assets/Icons/ic_checkbox.svg);
+  }
+  .blue-background{
+    background-color: #2196F3;
+  }
+  /* On mouse-over, add a grey background color */
+  .c-checkbox:hover input ~ .checkmark {
+    background: url(../assets/Icons/ic_checkbox_hover.svg);
+    background-position: 0 0;
+  }
+  
+  /* When the checkbox is checked, add a blue background */
+  .c-checkbox input:checked ~ .checkmark {
+    background: url(../assets/Icons/ic_checkbox_active.svg);
+  }
+  
+  /* Create the checkmark/indicator (hidden when not checked) */
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  /* Show the checkmark when checked */
+  .c-checkbox input:checked ~ .checkmark:after {
+    display: block;
+    background: url(../assets/Icons/ic_checkbox_active.svg);
+  }
+  
+  /* vẽ + cài vtri cho dấu tích */
+  .c-checkbox .checkmark:after {
+    background: url(../assets/Icons/ic_checkbox_active.svg);
+
+  }
+  
+  

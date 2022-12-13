@@ -1,0 +1,134 @@
+.c-combobox{
+    display: flex;
+    width: 85px;
+    height: 35px;
+    margin: 0 20px 0 20px;
+    position: relative;
+}
+.page-limit{
+    width: 50px;
+    border: 1px solid #e0e0e0;
+    border-right: none;
+    text-align: center;
+}
+.icon-limit{
+    width: 35px;
+    background: url(../assets/Icons/ic_drop-down.svg) no-repeat;
+    background-size: 12px;
+    background-position: center;
+    border: 1px solid #e0e0e0;
+    border-left: none;
+    border-radius: 3.5px;
+}
+.icon-limit:hover{
+    cursor: pointer;
+}
+.dropdown-panel{
+    z-index: 100000;
+    position: absolute;
+    background-color: #fff;
+    border-radius: 4px;
+    overflow: hidden;
+    box-shadow: 0 0 16px rgb(23 27 42 / 24%);
+}
+.dropdown-body{
+    max-height: 198px;
+}
+.scroll{
+    overflow: auto;
+    scrollbar-color: #cdd3d6 #fff;
+    scrollbar-width: thin;
+    z-index: 1;
+}
+.dropdown-items{
+    margin: 0px;
+    padding: 0;
+}
+.dropdown-items.single{
+    display: flex;
+}
+.dropdown-items:first-child{
+    margin-top: 8px;
+}
+.dropdown-items:last-child{
+    margin-bottom: 8px;
+}
+.combobox-item:hover{
+    background: #bfd3f5;
+}
+.combobox-item{
+    cursor: pointer;
+    height: 36px;
+    line-height: 36px;
+    white-space: nowrap;
+    border-radius: 4px;
+    padding: 0 0 0 8px;
+    margin: 0 8px 0 8px;
+    text-align: left;
+}
+
+.combobox-item .combobox-item--text{
+    flex: 1;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.combobox-item .combobox-item-con{
+    display: flex;
+    width: 100%;
+}
+.selected-container{
+    margin: auto;
+    width: 36px;
+    height: 20px;
+}
+.selected-container .mi-checkbox-active{
+    margin: auto;
+}
+.icon24{
+    height: 24px;
+    width: 24px;
+    position: relative;
+}
+.icon24::before{
+    content: "";
+    position: absolute;
+    background: url(../assets/Icons/sprites.svg) no-repeat -190px -26px;
+    height: 24px;
+    width: 24px;
+    top: 0;
+    left: 0;
+}
+.chooseItem{
+    background: #cfdffc;
+}
+.position-panel{
+    bottom: 35px; 
+    min-width: 85px; 
+    left: 0px;
+}
+.position-filter{
+    position: absolute;
+    display: block;
+    width: 360px;
+    height: 430px;
+    background-color: white;
+    margin-top: 12px;
+    top: 100%;
+    left: 0;
+    display: block;
+    z-index: 15;
+    border-radius: 4px;
+    box-shadow: 0 0 16px rgb(23 27 42 / 24%);
+}
+.arrow{
+    position: absolute;
+    top: -7px;
+    right: 3px;
+    border-left: 8px solid white;
+    border-right: 8px solid white;
+    border-bottom: 16px solid white;
+    transform: rotate(45deg);
+    transition: .2s linear;
+    box-shadow: 0 -20px 20px 0 rgb(0 0 0 / 8%);
+}
